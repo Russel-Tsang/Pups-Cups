@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#logo {
+	align-content: center; 
+	padding-left: 40px; 
+	height: 100px;
+	width: 150px;
+	}
+
+.navbar { 
+	text-align: center;
+	top: 0; 
+	right: 0; 
+	left: 0; 
+	position: absolute; 
+	display: inline-block;
+	max-height: 80px; 
+	font-size: 25px; 
+}
+
+.carousel {
+	margin: 1% auto 0 auto;
+	width: 98%;
+}
+
+.foodImg {
+	height: 240px;
+	width: 98%;
+}
+
+.row {     /*food images*/
+	margin-top: 2%;
+}
+
+#caption {
+	background-color: #f4f4f4;
+	border: 2px black solid;
+	height: 150px;
+	width: 98%;
+	margin: 0 auto;
+}
+
+#food {
+	border: 2px black solid;
+	height: 1000px;
+	width: 98%;
+	margin: 1% auto 0 auto;
+	text-align: center;
+}
