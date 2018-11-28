@@ -17,6 +17,11 @@
 	display: inline-block;
 	max-height: 80px; 
 	font-size: 25px; 
+	background-color: #f4f4f4;
+}
+
+.nav-link {
+	color: #9ac8ed;
 }
 
 .carousel {
