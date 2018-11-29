@@ -2,65 +2,51 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<link rel="stylesheet" href="pups&cups.css">
+  <link rel="stylesheet" href="pups&cups.css">
   <title>Untitled Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"><!-- \ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>            <!--  \ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>     <!-- > Bootstrap & jQuery CDNs    --> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>         <!--  / -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet"> <!-- Google Fonts -->
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- \ fotorama CDNs -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>          <!-- /  -->
+
 </head>
 
 <body> 
-    <nav class="navbar navbar-expand-lg">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light" >
     <a class="navbar-brand" href="#"><img id="logo" src="https://i.ibb.co/bd0cgcx/logo.png" alt="logo" border="0"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link" href="#">About</a>
-        <a class="nav-item nav-link" href="#">Menu</a>
-        <a class="nav-item nav-link" href="#">Photo</a>
-        <a class="nav-item nav-link" href="#">Bring Your Own Dog</a>
-        <a class="nav-item nav-link" href="#">Contact</a>
-      </div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item nav-link left-most" href="#">About</li>
+        <li class="nav-item nav-link middle" href="#">Menu</li>
+        <li class="nav-item nav-link middle" href="#">Photo</li>
+        <li class="nav-item nav-link middle" href="#">BOYD</li>
+        <li class="nav-item nav-link right-most" href="#">Contact</li>
+      </ul>
     </div>
   </nav>
+  <!-- NAVBAR -->
 
-  <div id="demo" class="carousel slide" data-ride="carousel">
-
-    <!-- Indicators -->
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-    </ul>
-    
-    <!-- The slideshow -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://s3-ap-southeast-1.amazonaws.com/newworldhotels-assets/wp-content/uploads/sites/14/2014/05/cafe-east_960x375.jpg" alt="Los Angeles" width="100%" height="100%">
-      </div>
-      <div class="carousel-item">
-        <img src="https://s3-ap-southeast-1.amazonaws.com/newworldhotels-assets/wp-content/uploads/sites/14/2014/05/cafe-east_960x375.jpg" alt="Chicago" width="100%" height="100%">
-      </div>
-      <div class="carousel-item">
-        <img src="https://s3-ap-southeast-1.amazonaws.com/newworldhotels-assets/wp-content/uploads/sites/14/2014/05/cafe-east_960x375.jpg" alt="New York" width="100%" height="100%">
-      </div>
+  <!-- CAROUSEL -->
+  <div id="image-slides">
+    <div class="fotorama" data-width="1200">
+      <img src="http://s.fotorama.io/1.jpg">
+      <img src="http://s.fotorama.io/2.jpg">
     </div>
-    
-    <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
   </div>
+  <!-- CAROUSEL -->
 
+  <!-- CAROUSEL CAPTION-->
   <div id="caption">
 
   </div>
+  <!-- CAROUSEL CAPTION-->
 
   <div id="food">
 
@@ -125,7 +111,6 @@
     </div>
 
   </div>
-
 
 </body>
 </html>
