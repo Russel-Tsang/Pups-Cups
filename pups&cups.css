@@ -2,7 +2,7 @@
 /* CSS Document */
 
 #background {
-	background: url("dog-background.jpg");
+	background: url("../../1.jpg");
 	background-size: cover;		/*fit to background-size*/ 
 	background-position: center;
 	height: 900px;
