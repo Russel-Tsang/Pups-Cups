@@ -2,7 +2,7 @@
 /* CSS Document */
 
 #background {
-	background: url("background2.jpg");
+	background: url("dog-background.jpg");
 	background-size: cover;		/*fit to background-size*/ 
 	background-position: center;
 	height: 900px;
@@ -23,7 +23,11 @@
 	width: 210px;
 	margin-left: -30px;
 	padding-top: 10px;
+	transition: all .6s; 
+}
 
+.logo-change {
+	padding: 30px 20px 20px 60px !important;
 }
 
 #site-logo {
@@ -34,6 +38,7 @@
 	padding-bottom: 10px;
 	position: fixed;
 	width: 100%;
+	transition: all .6s;
 	z-index: 9;
 }
 
@@ -45,11 +50,11 @@ nav {
 	height: 130px;
 	font-family: 'Nunito', sans-serif;
 	font-weight: bold;
+	transition: all .6s;
 }
 
 .nav-link {
-	color: #9ac8ed !important;
-	/*padding-right: 0px !important;*/
+/*	padding-right: 0px !important;*/
 	cursor: pointer;
 	margin-right: 90px;
 	transition: all .3s;
@@ -105,4 +110,9 @@ nav {
 	width: 98%;
 	margin: 1% auto 0 auto;
 	text-align: center;
+}
+
+.fotorama {
+	position: relative;
+	top: -140px;
 }
