@@ -6,9 +6,9 @@
 	background-size: cover;		/*fit to background-size*/ 
 	background-position: center;
 	height: 900px;
-	background-position: 0 -70px;
-	border-bottom-right-radius: 50% 4%;
-  	border-bottom-left-radius: 50% 4%;
+	background-position: 0 -3900px;
+	border-bottom-right-radius: 50% 1.7%;
+  	border-bottom-left-radius: 50% 1.7%;
 }
 
 .wrapper {
@@ -23,7 +23,11 @@
 	width: 210px;
 	margin-left: -30px;
 	padding-top: 10px;
+	transition: all .6s; 
+}
 
+.logo-change {
+	padding: 30px 20px 20px 60px !important;
 }
 
 #site-logo {
@@ -31,27 +35,51 @@
 }
 
 #navigation {
-	background-color:rgba(0, 0, 0, 0.1);
 	padding-bottom: 10px;
+	position: fixed;
+	width: 100%;
+	transition: all .6s;
+	z-index: 9;
 }
 
 nav { 
 	text-align: center; 
 	position: absolute; 
 	display: inline-block; 
-	font-size: 22px; 
+	font-size: 25px; 
 	height: 130px;
-	font-family: 'Merriweather Sans', sans-serif;
+	font-family: 'Nunito', sans-serif;
+	font-weight: bold;
+	transition: all .6s;
 }
 
 .nav-link {
-	color: #9ac8ed !important;
-	padding-right: 80px !important;
+/*	padding-right: 0px !important;*/
 	cursor: pointer;
+	margin-right: 90px;
+	transition: all .3s;
 }
 
-.nav-link:hover {
+.expand:hover {
 	font-size: 1.2em;
+	transition: all .3s;
+}
+
+#item-border {
+	border: 3px #9ac8ed solid;
+	width: 180px;
+	height: 50px;
+	position: absolute;
+	left: 82.5%;
+	border-radius: 5%;
+	transition: all .3s;
+}
+
+#item-border:hover {
+	width: 200px;
+	height: 60px;
+	left: 81.5%;
+	bottom: 29%;
 	transition: all .3s;
 }
 
@@ -82,4 +110,9 @@ nav {
 	width: 98%;
 	margin: 1% auto 0 auto;
 	text-align: center;
+}
+
+.fotorama {
+	position: relative;
+	top: -140px;
 }

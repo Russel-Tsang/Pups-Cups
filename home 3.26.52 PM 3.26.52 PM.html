@@ -2,13 +2,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-  <link rel="stylesheet" href="pups&cups.css">
   <title>Pups & Cups</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"><!-- \ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>            <!--  \ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>     <!-- > Bootstrap & jQuery CDNs --> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>         <!--  / -->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet"> <!-- Google Fonts -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="pups&cups.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> <!-- Google Fonts -->
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- \ fotorama CDNs -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>          <!-- /  -->
 
@@ -16,7 +20,7 @@
 
 <body> 
 
-<div id="background">
+<!-- <div id="background"> -->    <!-- background image -->
   <!-- NAVBAR -->
   <div id="navigation">
   <div class="wrapper">
@@ -28,19 +32,26 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item nav-link">About</li>
-          <li class="nav-item nav-link">Menu</li>
-          <li class="nav-item nav-link">Photo</li>
-          <li class="nav-item nav-link">BOYD</li>
-          <li class="nav-item nav-link">Contact</li>
-        </ul>
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link expand">About</a>
+          <a class="nav-item nav-link expand">Menu</a>
+          <a class="nav-item nav-link expand">Photo</a>
+          <a class="nav-item nav-link expand">Contact</a>
+          <div id="item-border"></div>
+          <a class="nav-item nav-link get_started">Get Started</a>
+        </div>
       </div>
     </nav>
   </div>
 </div>
     <!-- NAVBAR -->
-  </div>
+
+<div class="fotorama" data-width="100%" data-autoplay="3000">
+  <img src="dog-background.jpg">
+  <img src="background2.jpg">
+</div>
+
+  <!-- </div> -->    <!-- background image -->
     <!-- CAROUSEL CAPTION-->
     <div id="caption">
 
@@ -99,6 +110,8 @@
         </div> 
       </div>
     </div>
-</div>
+  </div>
+
+<script src="home.js" type="text/javascript" defer="defer"></script>
 </body>
 </html>
