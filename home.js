@@ -8,15 +8,10 @@ $(window).scroll(function(){
     if(scroll < 300){
         $('#navigation').css('background', 'black');
         $('.nav-link').css('color', '#9ac8ed');
-        $('nav').css('height', '130px');
-        logo.setAttribute('src', 'https://i.ibb.co/bd0cgcx/logo.png');
-        logo.classList.remove('logo-change');        
+     
     } else{
         $('#navigation').css('background', 'rgba(0, 0, 0, .6)');
         // $('.nav-link').css('color', 'white');
-        $('nav').css('height', '70px');
-        logo.setAttribute('src', 'https://i.ibb.co/ScbWjv8/logo-2.png');
-        logo.classList.add('logo-change');
 
         for (var i = 0; i < nav_links.length - 1; i++) {
             nav_links[i].style.color = "white";
@@ -25,7 +20,7 @@ $(window).scroll(function(){
 });
 
 for (var i = 0; i < nav_links.length; i++) {
-    nav_links[i].style.color = "white";
+    nav_links[i].style.color = "#9ac8ed";
 }
 
 item_border.addEventListener("mouseover", function(){
