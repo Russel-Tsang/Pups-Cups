@@ -10,9 +10,12 @@
 	border-bottom-right-radius: 50% 1.7%;
   	border-bottom-left-radius: 50% 1.7%;
 }*/
+body {
+	font-family: 'Nunito', sans-serif;
+}
 
 .wrapper {
-	width: 80%;
+	width: 65%;
 	margin: 0 auto;
 }
 
@@ -30,17 +33,17 @@
 	padding: 30px 20px 20px 60px !important;
 }
 
-#site-logo {
-	margin-left: 30px;
-}
-
 #navigation {
 	padding-bottom: 10px;
 	position: fixed;
 	width: 100%;
 	transition: all .6s;
 	z-index: 9;
-	background-color: rgba(190,190,190, .9);
+	background-color: black;
+}
+
+#site-logo {
+	margin-left: 30px;
 }
 
 nav { 
@@ -49,7 +52,6 @@ nav {
 	display: inline-block; 
 	font-size: 25px; 
 	height: 130px;
-	font-family: 'Nunito', sans-serif;
 	font-weight: bold;
 	transition: all .6s;
 }
@@ -93,36 +95,37 @@ nav {
 	width: 98%;
 }
 
-.row {     /*food images*/
-	margin-top: 2%;
-}
-
 #caption {
 	background-color: #f4f4f4;
 	height: 150px;
 	width: 100%;
-	margin: -120px auto 0 auto;
-	font-family: 'Nunito', sans-serif;
+	margin: 20px auto 0 auto;
 	font-size: 25px;
 	text-align: center;
 }
 
-#food {
-	height: 1000px;
-	width: 98%;
-	margin: 1% auto 0 auto;
-	text-align: center;
-}
-
-.fotorama {
+/*.fotorama {
 	position: relative;
 	top: -140px;
+}*/
+
+.carousel {
+	max-height: 900px;
+	overflow: hidden;
+}
+
+.carousel-dog {
+	margin-top: -4%;
+}
+
+.carousel-interior {
+	margin-top: -15%;
 }
 
 .foodImg {
 	float: left;
-	width: 30%;
-	margin: 1.66%;
+	width: 31%;
+	margin: .7%;
 }
 
 #intro-h2 {
@@ -130,7 +133,37 @@ nav {
 	font-size: 40px;
 }
 
-footer {
-	position: relative;
-	top: 1000px;
+#location-info-div {
+	float: right; 
+	width: 20%;
+	margin-right: 10%;
 }
+
+#location-info-div {
+	margin-top: 5%;	
+	text-align: left;
+}
+
+iframe {
+	margin-top: 5%;
+	margin-left: 1%;
+}
+
+footer {
+	clear: both;
+}
+
+#socialmedia { 
+	content-align: center;
+	text-align:center;}
+
+.facebook {
+	height: 50px; 
+	width: 50px; 
+}
+
+.instagram {
+	height: 50px; 
+	width: 50px;
+}
+

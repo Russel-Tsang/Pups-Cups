@@ -6,7 +6,7 @@ var logo = document.getElementById("logo");
 $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     if(scroll < 300){
-        $('#navigation').css('background', 'rgba(0, 0, 0, 0.6)');
+        $('#navigation').css('background', 'black');
         $('.nav-link').css('color', '#9ac8ed');
         $('nav').css('height', '130px');
         logo.setAttribute('src', 'https://i.ibb.co/bd0cgcx/logo.png');
