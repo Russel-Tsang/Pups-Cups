@@ -6,7 +6,7 @@ var logo = document.getElementById("logo");
 $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     if(scroll < 300){
-        $('#navigation').css('background', 'rgba(0, 0, 0, 0.05)');
+        $('#navigation').css('background', 'rgba(0, 0, 0, 0.6)');
         $('.nav-link').css('color', '#9ac8ed');
         $('nav').css('height', '130px');
         logo.setAttribute('src', 'https://i.ibb.co/bd0cgcx/logo.png');
@@ -25,7 +25,7 @@ $(window).scroll(function(){
 });
 
 for (var i = 0; i < nav_links.length; i++) {
-    nav_links[i].style.color = "#9ac8ed";
+    nav_links[i].style.color = "white";
 }
 
 item_border.addEventListener("mouseover", function(){

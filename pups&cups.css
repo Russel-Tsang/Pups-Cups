@@ -1,15 +1,15 @@
 @charset "UTF-8";
 /* CSS Document */
 
-#background {
+/*#background {
 	background: url("../../1.jpg");
-	background-size: cover;		/*fit to background-size*/ 
+	background-size: cover;		
 	background-position: center;
 	height: 900px;
 	background-position: 0 -3900px;
 	border-bottom-right-radius: 50% 1.7%;
   	border-bottom-left-radius: 50% 1.7%;
-}
+}*/
 
 .wrapper {
 	width: 80%;
@@ -40,6 +40,7 @@
 	width: 100%;
 	transition: all .6s;
 	z-index: 9;
+	background-color: rgba(190,190,190, .9);
 }
 
 nav { 
@@ -65,7 +66,7 @@ nav {
 	transition: all .3s;
 }
 
-#item-border {
+/*#item-border {
 	border: 3px #9ac8ed solid;
 	width: 180px;
 	height: 50px;
@@ -73,12 +74,12 @@ nav {
 	left: 82.5%;
 	border-radius: 5%;
 	transition: all .3s;
-}
+}*/
 
 #item-border:hover {
 	width: 200px;
 	height: 60px;
-	left: 81.5%;
+	/*left: 81.5%;*/\
 	bottom: 29%;
 	transition: all .3s;
 }
@@ -98,14 +99,15 @@ nav {
 
 #caption {
 	background-color: #f4f4f4;
-	border: 2px black solid;
 	height: 150px;
-	width: 65%;
-	margin: 60px auto;
+	width: 100%;
+	margin: -120px auto 0 auto;
+	font-family: 'Nunito', sans-serif;
+	font-size: 25px;
+	text-align: center;
 }
 
 #food {
-	border: 2px black solid;
 	height: 1000px;
 	width: 98%;
 	margin: 1% auto 0 auto;
@@ -115,4 +117,20 @@ nav {
 .fotorama {
 	position: relative;
 	top: -140px;
+}
+
+.foodImg {
+	float: left;
+	width: 30%;
+	margin: 1.66%;
+}
+
+#intro-h2 {
+	font-weight: bold;
+	font-size: 40px;
+}
+
+footer {
+	position: relative;
+	top: 1000px;
 }
