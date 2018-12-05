@@ -15,7 +15,7 @@ body {
 }
 
 .wrapper {
-	width: 65%;
+	width: 75%;
 	margin: 0 auto;
 }
 
@@ -71,8 +71,12 @@ nav {
 	border-radius: 10%;
 }
 
-.hover {
-	color: white;
+.hover-beg {
+	color: white !important;
+}
+
+.hover-end {
+	color: #9ac8ed !important;
 }
 
 #image-slides {
@@ -85,21 +89,23 @@ nav {
 }
 
 #caption {
+	padding: 30px;
 	background-color: #e9f3fb;
-	height: 150px;
+	height: 50px;
 	width: 100%;
-	margin: 20px auto 0 auto;
+	padding-top: 0;
+	padding-bottom: 100px;
 	font-size: 25px;
 	text-align: center;
+	font-family: 'Oleo Script', cursive;
 }
 
-/*.fotorama {
-	position: relative;
-	top: -140px;
-}*/
+#intro-text {
+	font-size: 20px;
+}
 
 .carousel {
-	max-height: 680px;
+	max-height: 700px;
 	overflow: hidden;
 }
 
@@ -118,7 +124,7 @@ nav {
 }
 
 #intro-h2 {	
-	font-size: 120px;
+	font-size: 80px;
 	font-family: 'Oleo Script', cursive;
 }
 
@@ -144,6 +150,7 @@ iframe {
 
 footer {
 	clear: both;
+	background-color: #e9f3fb;
 }
 
 #socialmedia { 
