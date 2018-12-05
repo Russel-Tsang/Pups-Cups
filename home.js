@@ -21,14 +21,17 @@ $(window).scroll(function(){
 
 for (var i = 0; i < nav_links.length; i++) {
     nav_links[i].style.color = "#9ac8ed";
+
+    // nav_links[i].addEventListener("mouseover", function(){
+    //     nav_links[i].classList.add('hover');
+    // })
 }
 
-item_border.addEventListener("mouseover", function(){
-	get_started.style.fontSize = "27px";
-})
 
-item_border.addEventListener("mouseout", function(){
-	get_started.style.fontSize = "25px";
-})
+    nav_links[2].classList.add('hover');
+
+
+
+
 
 

@@ -38,16 +38,19 @@ nav {
 }
 
 .nav-link {
-/*	padding-right: 0px !important;*/
 	cursor: pointer;
-	margin-right: 40px;
+	margin-right: 50px;
 	transition: all .3s;
 }
 
 .get-started {
 	border: 2px #9ac8ed solid;
 	padding: 5px 30px 0 27px !important;
-	border-radius: 10%;
+	border-radius: 8%;
+}
+
+.hover {
+	color: white;
 }
 
 #caption {
