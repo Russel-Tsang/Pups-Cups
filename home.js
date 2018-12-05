@@ -21,14 +21,7 @@ $(window).scroll(function(){
 
 for (var i = 0; i < nav_links.length; i++) {
     nav_links[i].style.color = "#9ac8ed";
-
-    // nav_links[i].addEventListener("mouseover", function(){
-    //     nav_links[i].classList.add('hover');
-    // })
 }
-
-
-    nav_links[2].classList.add('hover');
 
 
 

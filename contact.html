@@ -1,9 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<title>P&C Contact</title>
-</head>
-<body>
+<meta charset="UTF-8">
+  <title>P&C Contact</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"><!-- \ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>            <!--  \ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>     <!-- > Bootstrap & jQuery CDNs --> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>         <!--  / -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+      >
+    </script>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
 
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- \ fotorama CDNs -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>          <!-- /  -->
+</head>
+
+<body> 
+  <!-- NAVBAR -->
+  <div id="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div id="site-logo">
+      <a class="navbar-brand" href="home.html"><img id="logo" img src="https://i.ibb.co/85YCnvq/logo.png" alt="logo" border="0"></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link expand" href="about.html">About</a>
+          <a class="nav-item nav-link expand" href="menu.html">Menu</a>
+          <a class="nav-item nav-link expand" href="photo.html">Photo</a>
+          <a class="nav-item nav-link expand" href="contact.html">Contact</a>
+          <a class="nav-item nav-link get-started">Get Started</a>
+      	</div>
+      </div>
+    </nav>
+  </div>
+  <!-- NAVBAR -->
+
+  <div id="contact-body">
+  	<div class="wrapper">
+  	<h2>Contact</h2>
+  	</div>
+  	<hr>
+  	<br>
+  	<div class="contact-wrapper">
+  		<img id="contact-dog" src="https://negativespace.co/wp-content/uploads/2018/01/negative-space-dog-biscuits-coffee-pet-freestock-thumb-1.jpg">
+	<form>
+	  <div class="form-group">
+	    <label for="exampleFormControlInput1">Email address</label>
+	    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleFormControlInput1">Name</label>
+	    <input type="text" class="form-control" id="exampleFormControlInput1">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleFormControlInput1">Subject</label>
+	    <input type="text" class="form-control" id="exampleFormControlInput1">
+	  </div>
+
+	  <div class="form-group">
+	    <label for="exampleFormControlTextarea1">Message</label>
+	    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+	  </div>
+	</form>
+	</div>
+  </div>
+
+<footer> 
+  <div id="socialmedia">
+    <img class="facebook" src="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/facebook-512.png" >
+    <img class="instagram" src="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/instagram-512.png" >
+  </div>
+</footer>
+
+  <script src="home.js" type="text/javascript" defer="defer"></script>  
 </body>
 </html>
