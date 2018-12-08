@@ -1,168 +1,153 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*#background {
-	background: url("../../1.jpg");
-	background-size: cover;		
-	background-position: center;
-	height: 900px;
-	background-position: 0 -3900px;
-	border-bottom-right-radius: 50% 1.7%;
-  	border-bottom-left-radius: 50% 1.7%;
-}*/
-body {
-	font-family: 'Nunito', sans-serif;
+@media only screen and (min-width: 768px) {
+	body {
+		font-family: 'Nunito', sans-serif;
+	}
+
+	.wrapper {
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	@media (min-width: 768px) and (max-width: 1100px) {
+	   .collapse {
+	       display: none !important;
+	   }
+	}
+
+	#image-slides {
+		margin-left: 4.5%;
+	}
+
+	.foodImg {
+		height: 240px;
+		width: 98%;
+	}
+
+	#caption {
+		padding: 30px;
+		background-color: #e9f3fb;
+		height: 50px;
+		width: 100%;
+		padding-top: 0;
+		padding-bottom: 100px;
+		text-align: center;
+		font-family: 'Oleo Script', cursive;
+	}
+
+	#intro-text {
+		font-size: 20px;
+	}
+
+	.carousel {
+		max-height: 700px;
+		overflow: hidden;
+	}
+
+	.carousel-dog {
+		margin-top: -15%;
+		padding-bottom: -50px;
+	}
+
+	#dog {
+		height: 650px;
+	}
+
+	.carousel-interior {
+		margin-top: -15%;
+	}
+
+	.foodImg {
+		float: left;
+		width: 31%;
+		margin: .7%;
+	}
+
+	#intro-h2 {	
+		font-size: 80px;
+		font-family: 'Oleo Script', cursive;
+	}
+
+	#location-div {
+		background-color: #f2f2f2;
+		float: right;
+		padding-bottom: 30px;
+		margin-top: 100px;
+	}
+
+	#location-info-div {
+		float: right; 
+		width: 23%;
+		margin-right: 10%;
+		margin-top: 5%;	
+		text-align: left;
+	}
+
+	iframe {
+		margin-top: 5%;
+		margin-left: 10px;
+	}
+
+	footer {
+		clear: both;
+		background-color: #e9f3fb;
+	}
+
+	#socialmedia { 
+		content-align: center;
+		text-align:center;}
+
+	.facebook {
+		height: 50px; 
+		width: 50px; 
+	}
+
+	.instagram {
+		height: 50px; 
+		width: 50px;
+	}
 }
 
-.wrapper {
-	width: 75%;
-	margin: 0 auto;
+@media only screen and (min-width: 600px) {
+	#caption {
+		padding: 30px;
+		background-color: #e9f3fb;
+		height: 50px;
+		width: 100%;
+		padding-top: 0;
+		padding-bottom: 100px;
+		text-align: center;
+		font-family: 'Oleo Script', cursive;
+	}
+
+	#intro-h2 {	
+		font-size: 80px;
+		font-family: 'Oleo Script', cursive;
+	}
+
+	iframe {
+		margin: 5% auto auto 1%;
+	}
+
+/*	#location-div {
+		background-color: #f2f2f2;
+		float: right;
+		padding-bottom: 30px;
+		margin-top: 100px;
+	}
+
+	#location-info-div {
+		width: 100%;
+		margin-right: 10%;
+		margin-top: 5%;	
+		text-align: center;
+	}*/
 }
-
-#logo {
-	align-content: center; 
-	height: 110px;
-	width: 200px;
-	margin-left: -30px;
-	padding-top: 10px;
-}
-
-#navigation {
-	padding-bottom: 10px;
-	position: fixed;
-	width: 100%;
-	z-index: 9;
-	background-color: black;
-}
-
-#site-logo {
-	margin-left: 30px;
-}
-
-nav { 
-	text-align: center; 
-	position: absolute; 
-	display: inline-block; 
-	font-size: 20px; 
-	height: 75px;
-}
-
-.navbar-brand {
-	position: relative;
-	margin-top: -30px;
-	left: 100px;
-}
-
-.navbar-nav {
-	margin-top: 10px;
-	margin-right: 40px;
-}
-
-.nav-link {
-/*	padding-right: 0px !important;*/
-	cursor: pointer;
-	margin-right: 50px;
-	transition: all .3s;
-}
-
-.get-started {
-	border: 2px #9ac8ed solid;
-	padding: 5px 30px 0 27px !important;
-	border-radius: 10%;
-}
-
-.hover-beg {
-	color: white !important;
-}
-
-.hover-end {
-	color: #9ac8ed !important;
-}
-
-#image-slides {
-	margin-left: 4.5%;
-}
-
-.foodImg {
-	height: 240px;
-	width: 98%;
-}
-
-#caption {
-	padding: 30px;
-	background-color: #e9f3fb;
-	height: 50px;
-	width: 100%;
-	padding-top: 0;
-	padding-bottom: 100px;
-	font-size: 25px;
-	text-align: center;
-	font-family: 'Oleo Script', cursive;
-}
-
-#intro-text {
-	font-size: 20px;
-}
-
-.carousel {
-	max-height: 700px;
-	overflow: hidden;
-}
-
-.carousel-dog {
-	margin-top: -4%;
-}
-
-.carousel-interior {
-	margin-top: -15%;
-}
-
-.foodImg {
-	float: left;
-	width: 31%;
-	margin: .7%;
-}
-
-#intro-h2 {	
-	font-size: 80px;
-	font-family: 'Oleo Script', cursive;
-}
-
-#location-div {
-	background-color: #f2f2f2;
-	float: right;
-	padding-bottom: 30px;
-	margin-top: 100px;
-}
-
-#location-info-div {
-	float: right; 
-	width: 23%;
-	margin-right: 10%;
-	margin-top: 5%;	
-	text-align: left;
-}
-
-iframe {
-	margin-top: 5%;
-	margin-left: 10px;
-}
-
-footer {
-	clear: both;
-	background-color: #e9f3fb;
-}
-
-#socialmedia { 
-	content-align: center;
-	text-align:center;}
-
-.facebook {
-	height: 50px; 
-	width: 50px; 
-}
-
-.instagram {
-	height: 50px; 
-	width: 50px;
+@media only screen  and (min-width : 1224px) {
+	#foodPhotos {
+		width:70%;
+		margin: 0 auto;
+	}
 }

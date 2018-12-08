@@ -1,0 +1,32 @@
+.navbar {
+	background-color: black !important;
+}
+
+.navbar-brand {
+	position: relative;
+	margin-top: -43px;
+	left: 100px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#logo {
+	align-content: center; 
+	height: 110px;
+	width: 200px;
+	margin-left: -30px;
+	padding-top: 10px;
+}
+
+.nav-link {
+	cursor: pointer;
+	font-size: 20px; 
+	margin-right: 50px;
+	transition: all .3s;
+}
+
+.get-started {
+	border: 2px #9ac8ed solid;
+	padding: 5px 30px 5px 27px !important;
+	border-radius: 10%;
+}

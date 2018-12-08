@@ -1,104 +1,88 @@
-#logo {
-	align-content: center; 
-	height: 110px;
-	width: 200px;
-	margin-left: -30px;
-	padding-top: 10px;
+@media only screen and (min-width: 768px) {
+
+	.wrapper {
+		text-align: center;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.contact-wrapper {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	#contact-body {
+		padding-top: 150px;
+	}
+
+	#contact-dog {
+		width: 43%;
+		margin-left: 5%;
+		margin-top: 2.5%
+	}
+
+	hr {
+	    border: 0;
+	    height: 0;
+	    border-top: 1px solid rgba(0, 0, 0, 0.1);
+	    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	    width: 55%;
+	}
+
+	form {
+		float: right;
+		width: 40%;
+		margin-right: 5%;
+	}
+
+	footer {
+		position: absolute;
+		bottom: 0;
+		margin: 0 auto;
+	}
+
+	#socialmedia { 
+		content-align: center;
+		text-align:center;
+	}
+
+	.facebook {
+		height: 50px; 
+		width: 50px; 
+	}
+
+	.instagram {
+		height: 50px; 
+		width: 50px;
+	}
 }
 
-#navigation {
-	padding-bottom: 10px;
-	position: fixed;
-	width: 100%;
-	z-index: 9;
-	background-color: black;
+@media only screen and (max-width: 1300px) {
+	#contact-dog {
+		width: 90%;
+		margin-left: 5%;
+	}
+	form {
+		margin-top: 15px;
+		float: right;
+		width: 90%;
+	}
+
 }
 
-#site-logo {
-	margin-left: 30px;
-}
+@media only screen and (max-width: 768px) {
+	body {
+		margin-top: 100px;
+	}
 
-nav { 
-	text-align: center; 
-	position: absolute; 
-	display: inline-block; 
-	font-size: 20px; 
-	height: 75px;
-}
+	#contact-h2 {
+		display: block;
+		margin: 0 auto;
+	}
 
-.navbar-brand {
-	position: relative;
-	margin-top: -30px;
-	left: 100px;
-}
-
-.navbar-nav {
-	margin-top: 10px;
-	margin-right: 40px;
-}
-
-.nav-link {
-	cursor: pointer;
-	margin-right: 50px;
-	transition: all .3s;
-}
-
-.get-started {
-	border: 2px #9ac8ed solid;
-	padding: 5px 30px 0 27px !important;
-	border-radius: 8%;
-}
-
-.wrapper {
-	width: 50%;
-	margin: 0 auto;
-}
-
-.contact-wrapper {
-	width: 70%;
-	margin: 0 auto;
-}
-
-#contact-body {
-	padding-top: 150px;
-}
-
-#contact-dog {
-	width: 43%;
-	margin-left: 5%;
-}
-
-hr {
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    width: 55%;
-}
-
-form {
-	float: right;
-	width: 40%;
-	margin-right: 5%;
-}
-
-footer {
-	position: absolute;
-	bottom: 0;
-	margin: 0 auto;
-}
-
-#socialmedia { 
-	content-align: center;
-	text-align:center;
-}
-
-.facebook {
-	height: 50px; 
-	width: 50px; 
-}
-
-.instagram {
-	height: 50px; 
-	width: 50px;
+	form {
+		margin-top: 15px;
+		width: 90%;
+		margin-right: 5%;
+	}
 }

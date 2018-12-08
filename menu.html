@@ -16,33 +16,37 @@
     <link rel="stylesheet" href="menu.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
-    
-    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- \ fotorama CDNs -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>          <!-- /  -->
+    <link rel="stylesheet" href="navbar.css">
 </head>
 
 <body> 
 
   <!-- NAVBAR -->
-    <div id="navigation">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div id="site-logo">
-        <a class="navbar-brand" href="home.html"><img id="logo" img src="https://i.ibb.co/85YCnvq/logo.png" alt="logo" border="0"></a>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link expand" href="about.html">About</a>
-            <a class="nav-item nav-link expand" href="menu.html">Menu</a>
-            <a class="nav-item nav-link expand" href="photo.html">Photo</a>
-            <a class="nav-item nav-link expand" href="contact.html">Contact</a>
-            <a class="nav-item nav-link get-started">Get Started</a>
-        </div>
-      </div>
-      </nav>
-  </div>
+  <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="home.html"><img id="logo" img src="https://i.ibb.co/85YCnvq/logo.png" alt="logo" border="0"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="photo.html">Photos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link get-started" href="get-started.html">Get Started</a>
+        </li>
+      </ul>
+    </div>
+  </nav> 
   <!-- NAVBAR -->
   <div id="menu-body">
     <div id="menu">
