@@ -1,7 +1,47 @@
 @charset "UTF-8";
 /* CSS Document */
 
-@media only screen and (min-width: 768px) {
+/*
+body {
+	margin: 0;
+}
+
+#consistent {
+	margin-left:auto;
+    margin-right:auto;
+    width:960px;
+}
+*/
+
+@media only screen  and (min-width : 1824px) {
+
+	#foodPhotos {
+		width:70%;
+		margin: 0 auto;
+	}
+	
+	iframe {
+		margin-top: 5%;
+		margin-left: 10px;
+	}
+	
+	#location-div {
+		background-color: #f2f2f2;
+		float: right;
+		padding-bottom: 30px;
+		margin-top: 100px;
+	}
+
+	#location-info-div {
+		float: right; 
+		width: 23%;
+		margin-right: 10%;
+		margin-top: 5%;	
+		text-align: left;
+	}
+}
+
+@media only screen and (min-width: 1224px) {    /*Desktop*/
 	body {
 		font-family: 'Nunito', sans-serif;
 	}
@@ -9,12 +49,6 @@
 	.wrapper {
 		width: 75%;
 		margin: 0 auto;
-	}
-
-	@media (min-width: 768px) and (max-width: 1100px) {
-	   .collapse {
-	       display: none !important;
-	   }
 	}
 
 	#image-slides {
@@ -42,13 +76,12 @@
 	}
 
 	.carousel {
-		max-height: 700px;
+		max-height: 800px;
 		overflow: hidden;
 	}
 
 	.carousel-dog {
 		margin-top: -15%;
-		padding-bottom: -50px;
 	}
 
 	#dog {
@@ -59,6 +92,10 @@
 		margin-top: -15%;
 	}
 
+	.carousel-interior-2 {
+		margin-top: -15%;
+	}
+	
 	.foodImg {
 		float: left;
 		width: 31%;
@@ -110,7 +147,7 @@
 	}
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {   /*Tablet*/
 	#caption {
 		padding: 30px;
 		background-color: #e9f3fb;
@@ -144,10 +181,4 @@
 		margin-top: 5%;	
 		text-align: center;
 	}*/
-}
-@media only screen  and (min-width : 1224px) {
-	#foodPhotos {
-		width:70%;
-		margin: 0 auto;
-	}
 }
