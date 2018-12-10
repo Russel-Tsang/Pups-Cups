@@ -12,101 +12,19 @@
     background-image: linear-gradient(to right, #66ffff 0%, #ccf3ff 100%);
 }
 
-.caption {
-    background-color: #e9f3fb;
-    width: 100%;
-    text-align: center;
-    padding: 5px 0px;
-    font-family: 'Oleo Script', cursive;
+#paw {
+    height: 250px;
+    transition: all 1.5s;
+    opacity: .0;
 }
 
-.wrapper {
-	width: 50%;
-	margin: 0 auto;
+img {
+    height: 250px;
 }
 
-.wrapper-mission {
-    /* width: 50%; */
-    /* margin: 0 auto;*/
-    margin: 0 10%;
-}
-
-#russel-pic {
-    width: 41%;
-    float: left;
-    margin-right: 2%;
-}
-
-.russel-right {
-    display: inline-block;
-    width: 57%;
-}
-.about-h2 {
-	font-size: 80px;
-}
-
-#mission-div {
-	margin-top: 20px;
-}
-
-#mission-text {
-	font-family: 'Nunito', sans-serif;
-	font-size: 20px;
-}
-
-#russel {
-    padding-top: 50px;
-}
-
-
-#russel-div {
-	width: 45%;
-	height: 500px;
-	float: right;
-	text-align: center;
-	padding-right: 140px;
-}
-
-#russel-text {
-	font-family: 'Nunito', sans-serif;
-	font-size: 20px;
-	margin: 0 auto;
-}
-
-#kelly {
-	padding-top: 100px;
-}
-
-#kelly-div {
-	width: 45%;
-	height: 500px;
-	float: left;
-	text-align: center;
-	padding-left: 170px;
-}
-
-#kelly-text {
-	font-family: 'Nunito', sans-serif;
-	font-size: 20px;
-	margin: 0 auto;
-}
-
-#max {
-	padding-top: 100px;
-}
-
-#max-div {
-	width: 45%;
-	height: 500px;
-	float: right;
-	text-align: center;
-	padding-right: 140px;
-}
-
-#max-text {
-	font-family: 'Nunito', sans-serif;
-	font-size: 20px;
-	margin: 0 auto;
+.jumbotron p, .jumbotron h1, .jumbotron hr{
+    opacity: .0;
+    transition: all 1.5s; 
 }
 
 footer {
@@ -127,67 +45,4 @@ footer {
 .instagram {
 	height: 50px; 
 	width: 50px;
-}
-.founder-div {
-    display: inline-block;
-     margin: 0 10%;
-}
-
-.kelly-left {
-    width: 57%;
-    float: left;
-}
-
-#kelly-pic {
-    width: 41%;
-    float: right;
-    margin-left: 2%;
-}
-#max-pic {
-    width: 41%;
-    float: left;
-    margin-right: 2%;
-}
-.max-right {
-    display: inline-block;
-    width: 57%;
-}
-
-@media only screen and (max-width: 768px) {
-    .about-h2 {
-        font-size: 50px;
-    }
-    #russel-pic {
-        width: 100%;
-        float: none;
-        margin-bottom: 5%;
-    }
-    .russel-right {
-        width: 100%;
-    }
-    .kelly-left {
-        width: 100%;
-        display: table-footer-group;
-    }
-    .kelly-right {
-        display: table-header-group;
-    }
-    #kelly-pic {
-        margin-bottom: 5%;
-        width: 100%;
-        float: none;
-        margin-left: 0%;
-    }
-    #kelly {
-        padding-top: 100px;
-        display: table;
-    }
-    #max-pic {
-        width: 100%;
-        float: none;
-        margin-bottom: 5%;
-    }
-    .max-right {
-        width: 100%;
-    }
 }
