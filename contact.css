@@ -4,6 +4,8 @@
 		text-align: center;
 		width: 50%;
 		margin: 0 auto;
+		min-height: 100%;
+		position: relative;
 	}
 
 	.contact-wrapper {
@@ -36,9 +38,11 @@
 	}
 
 	footer {
-		position: absolute;
-		bottom: 0;
-		margin: 0 auto;
+		background-color: #e9f3fb;
+		width: 100%;
+		float: right;
+		height: 3em;
+		margin-top: 12.5em;
 	}
 
 	#socialmedia { 
@@ -75,8 +79,8 @@
 		margin-top: 100px;
 	}
 
-	#contact-h2 {
-		display: block;
+	h2 {
+		text-align: center;
 		margin: 0 auto;
 	}
 
@@ -85,4 +89,12 @@
 		width: 90%;
 		margin-right: 5%;
 	}
+
+	footer {
+			background-color: #e9f3fb;
+			width: 100%;
+			float: right;
+			height: 3em;
+			margin-top: 2.5em;
+		}
 }

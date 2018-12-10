@@ -8,16 +8,12 @@
 	padding-top: 85px;
 }
 
-#caption {
-	padding: 30px;
-	background-color: #e9f3fb;
-	height: 50px;
-	width: 100%;
-	padding-top: 0;
-	padding-bottom: 90px;
-	font-size: 25px;
-	text-align: center;
-	font-family: 'Oleo Script', cursive;
+.caption {
+    background-color: #e9f3fb;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0px;
+    font-family: 'Oleo Script', cursive;
 }
 
 .wrapper {
@@ -25,17 +21,23 @@
 	margin: 0 auto;
 }
 
-.wrapper-nav {
-	width: 65%;
-	margin: 0 auto;
-}
-
 .wrapper-mission {
-	width: 50%;
-	margin: 0 auto;	
+    /* width: 50%; */
+    /* margin: 0 auto;*/
+    margin: 0 10%;
 }
 
-#about-h2 {
+#russel-pic {
+    width: 41%;
+    float: left;
+    margin-right: 2%;
+}
+
+.russel-right {
+    display: inline-block;
+    width: 57%;
+}
+.about-h2 {
 	font-size: 80px;
 }
 
@@ -49,13 +51,9 @@
 }
 
 #russel {
-	padding-top: 50px;
+    padding-top: 50px;
 }
 
-#russel-pic {
-	height: 400px;
-	margin-left: 10%;
-}
 
 #russel-div {
 	width: 45%;
@@ -75,11 +73,6 @@
 	padding-top: 100px;
 }
 
-#kelly-pic {
-	height: 400px;
-	margin-left: 5%;
-}
-
 #kelly-div {
 	width: 45%;
 	height: 500px;
@@ -96,11 +89,6 @@
 
 #max {
 	padding-top: 100px;
-}
-
-#max-pic {
-	height: 400px;
-	margin-left: 10%;
 }
 
 #max-div {
@@ -135,4 +123,67 @@ footer {
 .instagram {
 	height: 50px; 
 	width: 50px;
+}
+.founder-div {
+    display: inline-block;
+     margin: 0 10%;
+}
+
+.kelly-left {
+    width: 57%;
+    float: left;
+}
+
+#kelly-pic {
+    width: 41%;
+    float: right;
+    margin-left: 2%;
+}
+#max-pic {
+    width: 41%;
+    float: left;
+    margin-right: 2%;
+}
+.max-right {
+    display: inline-block;
+    width: 57%;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-h2 {
+        font-size: 50px;
+    }
+    #russel-pic {
+        width: 100%;
+        float: none;
+        margin-bottom: 5%;
+    }
+    .russel-right {
+        width: 100%;
+    }
+    .kelly-left {
+        width: 100%;
+        display: table-footer-group;
+    }
+    .kelly-right {
+        display: table-header-group;
+    }
+    #kelly-pic {
+        margin-bottom: 5%;
+        width: 100%;
+        float: none;
+        margin-left: 0%;
+    }
+    #kelly {
+        padding-top: 100px;
+        display: table;
+    }
+    #max-pic {
+        width: 100%;
+        float: none;
+        margin-bottom: 5%;
+    }
+    .max-right {
+        width: 100%;
+    }
 }
