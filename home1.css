@@ -102,10 +102,6 @@
 		width: 50px;
 	}
 
-	col {
-		border: red 2px solid !important;
-	}
-
 
 @media only screen and (max-width: 992px) {
 	
