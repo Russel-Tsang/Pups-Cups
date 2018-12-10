@@ -1,50 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-<<<<<<< HEAD
-=======
-/*
-body {
-	margin: 0;
-}
-
-#consistent {
-	margin-left:auto;
-    margin-right:auto;
-    width:960px;
-}
-*/
-
-@media only screen  and (min-width : 1824px) {
-
-	#foodPhotos {
-		width:70%;
-		margin: 0 auto;
-	}
-	
-	iframe {
-		margin-top: 5%;
-		margin-left: 10px;
-	}
-	
-	#location-div {
-		background-color: #f2f2f2;
-		float: right;
-		padding-bottom: 30px;
-		margin-top: 100px;
-	}
-
-	#location-info-div {
-		float: right; 
-		width: 23%;
-		margin-right: 10%;
-		margin-top: 5%;	
-		text-align: left;
-	}
-}
-
-@media only screen and (min-width: 1224px) {    /*Desktop*/
->>>>>>> 1d44c603864d6e6c5a64b2ea73d1fb98ccfd082d
 	body {
 		font-family: 'Nunito', sans-serif;
 	}
@@ -54,11 +10,7 @@ body {
 		margin: 0 auto;
 	}
 
-<<<<<<< HEAD
 		#image-slides {
-=======
-	#image-slides {
->>>>>>> 1d44c603864d6e6c5a64b2ea73d1fb98ccfd082d
 		margin-left: 4.5%;
 	}
 
@@ -83,12 +35,13 @@ body {
 	}
 
 	.carousel {
-		max-height: 800px;
+		max-height: 700px;
 		overflow: hidden;
 	}
 
 	.carousel-dog {
 		margin-top: -15%;
+		padding-bottom: -50px;
 	}
 
 	#dog {
@@ -99,10 +52,6 @@ body {
 		margin-top: -15%;
 	}
 
-	.carousel-interior-2 {
-		margin-top: -15%;
-	}
-	
 	.foodImg {
 		float: left;
 		width: 31%;
@@ -141,8 +90,8 @@ body {
 
 	#socialmedia { 
 		content-align: center;
-		text-align:center;
-	}
+		text-align:center;}
+
 	.facebook {
 		height: 50px; 
 		width: 50px; 
@@ -153,28 +102,11 @@ body {
 		width: 50px;
 	}
 
-<<<<<<< HEAD
-=======
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {   /*Tablet*/
-	#caption {
-		padding: 30px;
-		background-color: #e9f3fb;
-		height: 50px;
-		width: 100%;
-		padding-top: 0;
-		padding-bottom: 100px;
-		text-align: center;
-		font-family: 'Oleo Script', cursive;
-	}
->>>>>>> 1d44c603864d6e6c5a64b2ea73d1fb98ccfd082d
 
 @media only screen and (max-width: 992px) {
 	
 }
-<<<<<<< HEAD
 
 @media only screen and (max-width: 768px) {
 	
 }
-=======
->>>>>>> 1d44c603864d6e6c5a64b2ea73d1fb98ccfd082d
