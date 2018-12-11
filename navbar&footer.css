@@ -30,3 +30,22 @@
 	padding: 5px 30px 5px 27px !important;
 	border-radius: 10%;
 }
+
+footer {
+	clear: both;
+	background-color: #e9f3fb;
+}
+
+#socialmedia { 
+	content-align: center;
+	text-align:center;}
+
+.facebook {
+	height: 50px; 
+	width: 50px; 
+}
+
+.instagram {
+	height: 50px; 
+	width: 50px;
+}
