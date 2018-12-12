@@ -11,6 +11,35 @@ h2 {
 	text-align: center;
 }
 
+p {
+	margin-left: 20%; 
+	margin-right: 20%; 
+}
+
+.icon-upload { 
+	width: 500px; 
+	height: 350px; 
+	border: 2px dotted #BBBBBB;
+	border-radius: 5px; 
+	position: relative; 
+}
+
+#icon { 
+	display: block;
+	width: 200px; 
+	height: 200px ; 
+	margin-left: auto; 
+	margin-right: auto; 
+	padding-top: 20px; 
+}
+
+#upload {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+	padding-left: 130px;
+}
+
 hr {
     border: 0;
     height: 0;
