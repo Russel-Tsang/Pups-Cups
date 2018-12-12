@@ -10,6 +10,10 @@
 	padding-bottom: 0;
 }
 
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
 #logo {
 	align-content: center; 
 	height: 110px;
@@ -18,11 +22,27 @@
 	padding-top: 10px;
 }
 
-.nav-link {
+.navbar-nav > li {
 	cursor: pointer;
 	font-size: 20px; 
 	margin-right: 50px;
 	transition: all .3s;
+}
+
+@media only screen and (max-width: 1024px) {
+	#logo {									/*re-position logo*/
+	    margin-left: -100px !important;  
+	}
+}
+
+@media only screen and (max-width: 415px) {
+	#logo {                                 /*re-position logo*/
+	    align-content: center !important;
+	    height: 80px !important;
+	    width: 110px !important;
+	    margin-left: -100px !important;
+	    padding-top: 25px !important;
+	}
 }
 
 .get-started {

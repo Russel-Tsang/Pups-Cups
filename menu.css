@@ -3,18 +3,28 @@ body {
 	background-size: cover;
 	background-repeat: none;
 	font-family: 'Nunito', sans-serif;
-}
-
-.wrapper {
-	width: 65%;
-	margin: 0 auto;
-}
-
-#menu-body{
 	padding-top: 130px;
+	text-align: center;
 }
 
-#menu {
-	margin: 0 auto;
-	text-align: center;
+nav + img {
+	width: 40%;
+	position: relative;
+	bottom: 35px;
+}
+
+@media only screen and (max-width: 1024px) {
+	body {
+		background-size: contain;  /* adjust background for smaller screens */
+	}
+
+	nav + img {
+  		width: 80%;  /* adjust menu size for smaller screens */ 
+	}
+
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
 }

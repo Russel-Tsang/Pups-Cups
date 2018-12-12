@@ -1,82 +1,51 @@
-@media only screen and (min-width: 768px) {
-
-	.wrapper {
-		text-align: center;
-		width: 50%;
-		margin: 0 auto;
-		min-height: 100%;
-		position: relative;
-	}
-
-	.contact-wrapper {
-		width: 70%;
-		margin: 0 auto;
-	}
-
-	#contact-body {
-		padding-top: 150px;
-	}
-
-	#contact-dog {
-		width: 43%;
-		margin-left: 5%;
-		margin-top: 2.5%
-	}
-
-	hr {
-	    border: 0;
-	    height: 0;
-	    border-top: 1px solid rgba(0, 0, 0, 0.1);
-	    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-	    width: 55%;
-	}
-
-	form {
-		float: right;
-		width: 40%;
-		margin-right: 5%;
-	}
-
-	footer {
-		margin-top: 15.8em;
-	}
-
+body {
+	padding-top: 150px;  /* prevents navbar from blocking body content */
 }
 
-@media only screen and (max-width: 1300px) {
-	#contact-dog {
-		width: 90%;
-		margin-left: 5%;
-	}
-	form {
-		margin-top: 15px;
-		float: right;
-		width: 90%;
+.container img {
+	width: 100%;  /* adjusts image to fit container */
+	height: 100%;
+}
+
+h2 {
+	text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 55%;
+}
+
+form button {
+	width: 100%;
+}
+
+footer {
+	margin-top: 20em;
+}
+
+@media only screen and (max-width: 1024px) {	
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
 	}
 
+/*	nav {
+		height: 6%;
+	}*/
 }
 
 @media only screen and (max-width: 768px) {
-	body {
-		margin-top: 100px;
-	}
-
-	h2 {
-		text-align: center;
-		margin: 0 auto;
-	}
-
 	form {
-		margin-top: 15px;
-		width: 90%;
-		margin-right: 5%;
+		margin-top: 25px;
 	}
 
 	footer {
-			background-color: #e9f3fb;
-			width: 100%;
-			float: right;
-			height: 3em;
-			margin-top: 2.5em;
-		}
+		margin-top: 5em;
+	}
 }
+

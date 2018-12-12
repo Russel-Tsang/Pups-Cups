@@ -1,11 +1,5 @@
-/*body {
-	background-image: url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1231&q=80');
-	background-size: contain;
-}
-*/
-
-#about-body {
-	padding-top: 82px;
+body {
+	padding-top: 82px;  /* stops navbar from blocking body content */  
 	font-family: 'Nunito', sans-serif;
 }
 
@@ -16,19 +10,23 @@
 #paw {
     height: 250px;
     transition: all 1.5s;
-    opacity: .0;
+    opacity: .0;  /* initial transparency for JS animation effect */
 }
 
 h2 {
 	font-size: 40px;
 	font-weight: bold;
-	}
+}
+
+.jumbotron + h2 {
+	text-align: center;
+}
 
 h3 {
 	margin-left: -10px;
 	padding-left: 10px;
 	font-weight: bold; 
-	position: relative;
+	position: relative;  /* prevents .background from covering h3 text */ 
 }
 
 img {
@@ -36,15 +34,14 @@ img {
 }
 
 .jumbotron p, .jumbotron h2, .jumbotron hr{
-    opacity: .0;
+    opacity: .0;  /* initial transparency for JS animation effect */
     transition: all 1.5s; 
 }
 
 .background {
 	position: absolute;
-	left: 206.3%;
+	left: 206.3%;  /* initial position to support JS animation effect behind all h3's */
 	height: 35px;
-	/*width: 199%;*/
 	width: 79vw;
 	background-color: #ebebe0;	
 	transition: all 1.4s;

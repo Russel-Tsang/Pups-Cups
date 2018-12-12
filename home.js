@@ -1,52 +1,15 @@
-var get_started = document.getElementsByClassName("get_started")[0];
-var nav_links = document.querySelectorAll(".nav-link");
-var logo = document.getElementById("logo");
+var landing_banner = document.querySelector('.landing-banner');
 
-$(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    if(scroll < 600){
-        $('#navigation').css('background', 'black');
+landing_banner.addEventListener("mouseover", function(){
+	landing_banner.classList.add('landing-banner-2');
+})
 
-        $('.nav-link').css('color', '#9ac8ed');
+landing_banner.addEventListener("mouseout", function(){
+	landing_banner.classList.remove('landing-banner-2');
+})
 
-        for (var i = 0; i < nav_links.length; i++) {
-            nav_links[i].addEventListener("mouseover", function(){
-                this.style.color = "white";
-            });
-        }
-        
-        for (var i = 0; i < nav_links.length; i++) {
-            nav_links[i].addEventListener("mouseout", function(){
-                this.style.color = "#9ac8ed";
-            });
-        }
-     
-    } else{
-        $('.navbar').css('background','transparent');
-
-        for (var i = 0; i < nav_links.length - 1; i++) {
-            nav_links[i].style.color = "white";
-        }
-        
-        for (var i = 0; i < nav_links.length - 1; i++) {
-            nav_links[i].addEventListener("mouseover", function(){
-                this.style.color = "#9ac8ed";
-            });
-        }
-        for (var i = 0; i < nav_links.length - 1; i++) {
-            nav_links[i].addEventListener("mouseout", function(){
-                this.style.color = "white";
-            });
-        }
-    }
-});
-
-for (var i = 0; i < nav_links.length; i++) {
-    nav_links[i].style.color = "#9ac8ed";  
-}
-
-
-
-
-
-
+// for (var i = 200; i < 1200; i += 200) {
+// 	window.setTimeout(function() {
+// 			jumbotron.classList.toggle('jumbotron-image-2');
+// 	}, i);
+// }

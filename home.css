@@ -3,28 +3,21 @@
 
 	body {
 		font-family: 'Nunito', sans-serif;
-		padding-top: 83px;
-/*		background-image: url("https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
-		background-size: cover;*/
+		padding-top: 5.5%;
 	}
 
-	.carousel {
-		max-height: 720px;
-		overflow: hidden;
+	.landing-banner {
+		background-image: url('https://images.unsplash.com/photo-1500353391678-d7b57979d6d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+		background-size: cover;
+		width: 100%;
+		padding-bottom: 37%;
+		transition: all .5s;
 	}
 
-	.carousel-dog {
-		margin-top: -15%;
-		padding-bottom: -50px;
-	}
-
-	#dog {
-		height: 650px;
-	}
-
-	.carousel-interior {
-		margin-top: -15%;
-	}
+	.landing-banner-2 {
+		background-image: url('https://i.ibb.co/PttzyBd/landing-banner.jpg');
+		background-position: 0px -30px;
+	} 
 
 	.caption {
 		background-color: #f2f2f2;
@@ -88,5 +81,16 @@
 
 	.card {
 		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 415px) {
+	body {
+		font-family: 'Nunito', sans-serif;
+		padding-top: 13%;
+	}
+
+	iframe {
+		display: none;
 	}
 }
