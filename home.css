@@ -3,14 +3,14 @@
 
 	body {
 		font-family: 'Nunito', sans-serif;
-		padding-top: 5.5%;
+		padding-top: 3.7%;
 	}
 
 	.landing-banner {
 		background-image: url('https://images.unsplash.com/photo-1500353391678-d7b57979d6d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
 		background-size: cover;
 		width: 100%;
-		padding-bottom: 37%;
+		padding-bottom: 42%;
 		transition: all .5s;
 	}
 
@@ -21,22 +21,23 @@
 
 	.caption {
 		background-color: #f2f2f2;
-		height: 100px;
-		padding-top: 20px;
+		overflow:hidden;
+		height:1%;
+		padding-top: 1%;
 		text-align: center;
 	}
 
 	.lead {
-		font-size: 18px;
+		font-size: 110%;
 		font-weight: bold;
 	}
 
 	.section {
-		margin-top: 60px;
+		margin-top: 4%;
 	}
 
 	h2 {
-		font-size: 50px;
+		font-size: 150%;
 		font-weight: bold;
 	}
 
@@ -62,35 +63,65 @@
 		width: 100%;
 	}
 
-@media only screen and (max-width: 992px) {
-	.caption {
-		background-color: #f2f2f2;
-		height: 125px;
-		padding-top: 20px;
-		text-align: center;
+@media only screen and (max-width: 1024px) {
+	.lead {
+		font-size: 120%;
 	}
-}
 
 @media only screen and (max-width: 768px) {
-	.caption {
-		background-color: #f2f2f2;
-		height: 150px;
-		padding-top: 20px;
-		text-align: center;
-	}
-
-	.card {
-		margin-bottom: 20px;
-	}
-}
-
-@media only screen and (max-width: 415px) {
 	body {
 		font-family: 'Nunito', sans-serif;
-		padding-top: 13%;
+		padding-top: 9.5%;
+	}
+
+	.lead {
+		font-size: .9rem;
+	}
+
+	h2 {
+		font-size: 100%;
 	}
 
 	iframe {
 		display: none;
 	}
 }
+
+@media only screen and (max-width: 414px) {
+	.landing-banner {
+		margin-top: 10%;
+	}
+
+	.caption {
+		overflow:hidden;
+		padding: 5% 0;
+	}	
+
+	.lead {
+		width: 75%;
+		font-size: .95rem;
+		margin: 0 auto;
+		word-spacing: 4px;
+		line-height: 2em;
+	}
+
+	.section {
+		text-align: center;
+		margin-top: 8%;
+	}
+
+	.card {
+		margin-top: 5%;
+	}
+
+	h2 {
+		font-size: 110%;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.lead {
+		width: 81%;
+	}
+}
+
