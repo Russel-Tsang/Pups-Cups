@@ -1,0 +1,51 @@
+body {
+	padding-top: 150px;  /* prevents navbar from blocking body content */
+}
+
+.container img {
+	width: 100%;  /* adjusts image to fit container */
+	height: 100%;
+}
+
+h2 {
+	text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 55%;
+}
+
+form button {
+	width: 100%;
+}
+
+footer {
+	margin-top: 20em;
+}
+
+@media only screen and (max-width: 1024px) {	
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+
+/*	nav {
+		height: 6%;
+	}*/
+}
+
+@media only screen and (max-width: 768px) {
+	form {
+		margin-top: 25px;
+	}
+
+	footer {
+		margin-top: 5em;
+	}
+}
+
