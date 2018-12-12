@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	padding-top: 82px;  /* prevents navbar from blocking body content */
+	font-family: 'Nunito', sans-serif;
+}
+
+.jumbotron {
+    background-image: linear-gradient(to right, #66ffff 0%, #ccf3ff 100%);
+}
+
+#paw {
+    height: 250px;
+    transition: all 1.5s;
+    opacity: .0;  /* initial transparency for JS animation effect */
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.jumbotron + h2 {
+	text-align: center;
+}
+
+h3 {
+	margin-left: -10px;
+	padding-left: 10px;
+	font-weight: bold; 
+	position: relative;  /* prevents .background from covering h3 text */ 
+}
+.jumbotron p, .jumbotron h2, .jumbotron hr{
+    opacity: .0;  /* initial transparency for JS animation effect */
+    transition: all 1.5s; 
+}
+
+.dogphoto {
+	width: 100%;
+	height: 100%;
+	transition: .5s ease;
+	padding-bottom: 20px;
+}
+
+.col-lg-4 {
+	filter: grayscale(100%);
+}
+
+.col-lg-4:hover { 
+	filter: grayscale(0%); 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.col-lg-4:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+	padding-bottom: 20px; 
+}
