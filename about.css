@@ -40,9 +40,9 @@ img {
 
 .background {
 	position: absolute;
-	left: 206.3%;  /* initial position to support JS animation effect behind all h3's */
-	height: 35px;
-	width: 79vw;
+	left: 100%;  /* initial position to support JS animation effect behind all h3's */
+	padding: 12px 0 22px 0;
+	width: 100%;
 	background-color: #ebebe0;	
 	transition: all 1.4s;
 }
