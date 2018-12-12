@@ -8,15 +8,21 @@ h1 {
 	background-color: #e9f3fb; 
 }
 
-h2 {
+h2 {padding-left: 10%; 
+	padding-right: 10%; 
 	align-content: center; 
 	margin: auto;
 	font-family: 'Nunito', sans-serif;
-	font-size: 40px; 
+	font-size: 20px; 
 }
 
 .grid-container{ 
-	display: grid; 
+	border-style: solid; 
+	border-color: #e9f3fb; 
+	border-width: 1px; 
+	display: grid;
+	margin-left: 200px; 
+	margin-right: 200px;  
 	grid-template-columns: auto auto auto;
 	columns: 3;
 	rows: 2;
@@ -28,27 +34,59 @@ h2 {
 	width: 300px; 
 	padding: 20px; 
 	column-gap: 20px; 
+	float: right;
 }
 
-.grid-container:hover .text { 
-	filter: grayscale(100%);
-	color: black; 
-	font-size: 16px; 
-	padding: 16px 32px;
+.caption { 
+	width: 300px; 
+	height: 100px; 
+	
 }
 
 .dogphoto {
-	display: grid; 
 	height: 300px; 
 	width: 300px; 
 	image: contain; 
 	filter: grayscale(0%);
-	float: left; 
+	float: center; 
 	padding-bottom: 20px; 
 	transition: .5s ease; 
 }
 
 
-
 .dogphoto:hover { 
 	filter: grayscale(100%); }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+	padding-bottom: 20px; 
+}
