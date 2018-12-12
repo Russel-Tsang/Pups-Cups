@@ -1,7 +1,3 @@
-.navbar {
-	background-color: black !important;
-}
-
 .navbar-brand {
 	position: relative;
 	margin-top: -43px;
@@ -22,7 +18,7 @@
 	padding-top: 10px;
 }
 
-.navbar-nav > li {
+.nav-link {
 	cursor: pointer;
 	font-size: 20px; 
 	margin-right: 50px;
@@ -30,6 +26,10 @@
 }
 
 @media only screen and (max-width: 1024px) {
+	.fixed-top {
+		position: absolute;
+	}
+
 	#logo {									/*re-position logo*/
 	    margin-left: -100px !important;  
 	}
@@ -40,7 +40,7 @@
 	    align-content: center !important;
 	    height: 80px !important;
 	    width: 110px !important;
-	    margin-left: -100px !important;
+	    margin: 10px 0 10px -100px !important;
 	    padding-top: 25px !important;
 	}
 }
