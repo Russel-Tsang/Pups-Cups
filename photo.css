@@ -14,6 +14,9 @@ body {
     height: 250px;
     transition: all 1.5s;
     opacity: .0;  /* initial transparency for JS animation effect */
+    border: 2px black solid; 
+    border-radius: 50%; 
+    padding: 30px;
 }
 
 h2 {
@@ -78,4 +81,29 @@ h3 {
   transform: translate(-50%, -50%);
   text-align: center;
 	padding-bottom: 20px; 
+}
+
+@media only screen and (max-width: 1024px) {
+  .col-lg-4 {
+    filter: grayscale(0%);
+  } 
+}
+
+@media only screen and (max-width: 414px) {
+  .col-md-6 {
+    text-align: center; /* center paw on photos.html banner */ 
+  }
+
+  h2 {
+    margin-top: 2%;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .jumbotron p, .jumbotron h2, .jumbotron hr {
+      text-align: center;
+  }
 }

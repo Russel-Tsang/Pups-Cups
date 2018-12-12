@@ -1,5 +1,6 @@
 body {
 	padding-top: 150px;  /* prevents navbar from blocking body content */
+	font-family: 'Nunito', sans-serif;
 }
 
 .container img {
@@ -9,6 +10,7 @@ body {
 
 h2 {
 	text-align: center;
+	font-size: 40px;
 }
 
 hr {
@@ -33,19 +35,20 @@ footer {
 		bottom: 0;
 		width: 100%;
 	}
-
-/*	nav {
-		height: 6%;
-	}*/
 }
 
 @media only screen and (max-width: 768px) {
+	body {
+		padding-top: 100px;  /* prevents navbar from blocking body content */
+	}	
+
 	form {
 		margin-top: 25px;
 	}
 
 	footer {
-		margin-top: 5em;
+		position: relative;
+		bottom: 0;
 	}
 }
 
