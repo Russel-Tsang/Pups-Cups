@@ -26,7 +26,7 @@ form button {
 }
 
 footer {
-	margin-top: 20em;
+	margin-top: 17em;  //pushes footer down
 }
 
 @media only screen and (max-width: 1024px) {	
