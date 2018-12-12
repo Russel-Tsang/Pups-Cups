@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
   <title>P&C Get Started</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"><!-- \ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>            <!--  \ -->
@@ -17,7 +18,11 @@
     <link rel="stylesheet" href="get_started.css">
     <link rel="stylesheet" href="navbar&footer.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> <!-- Google Fonts -->
+	
+	<link rel="icon" href="../../../Downloads/logo_TSZ_icon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="../../../Downloads/logo_TSZ_icon.ico" type="image/x-icon"/>
 </head>
+	
 
 <body> 
   <!-- NAVBAR -->
@@ -52,31 +57,73 @@
     <div class="container">
   	<h2>Contact</h2>
   	<hr>
+		<p> We welcome dogs of all shape and sizes. Located below is a registration form to bring your dog. By completing this form, you and your dog can stop by anytime and get exclusive membership rights. </p>
   	<br>
     <div class="row">
       <div class="col-lg-6">
-  		  <img src="https://negativespace.co/wp-content/uploads/2018/01/negative-space-dog-biscuits-coffee-pet-freestock-thumb-1.jpg">
-      </div>
+		  <div class="icon-upload"> 
+		 <img id="icon" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-upload-512.png">
+		  <div id="upload">
+		   <input type="file" id="global-files-button" class="nodisplay" name="files[]" multiple accept=".jpg,.jpeg,.png,.gif,.apng,.tiff,.tif,.bmp,.xcf,.webp,.mp4,.mov">
+			  <label class="browse-btn" for="global-files-button"></label>
+		  </div>
+			  </div>
+		  </div>
+		
       <div class="col-lg-6">
     	<form>
+		<form class="needs-validation" novalidate>
     	  <div class="form-group">
-    	    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+    	    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" pattern="[A-Za-z]{1,32" required> 
+			  <div class="invalid-feedback"> Please provide a valid email </div>
+			  
     	  </div>
     	  <div class="form-group">
 
-    	    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+    	    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" required>
+			  <div class="invalid-feedback"> Please provide a name </div>
     	  </div>
     	  <div class="form-group">
 
-    	    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject">
+    	    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Dog's name" required>
+			  <div class="invalid-feedback"> Please provide a name </div>
     	  </div>
+			 <div class="form-group">
+
+    	    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Dog's breed" required>
+			  <div class="invalid-feedback"> Please provide a breed </div>
+    	  </div>
+			
     	  <div class="form-group">
  
-    	    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message..."></textarea>
+    	    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Description..." required></textarea>
     	  </div>
         <button type="button" class="btn btn-info">Submit</button>
+			</form>
     	</form>
-    </div>
+		  
+			<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+			
+    
     </div>
     </div>
 
