@@ -6,40 +6,6 @@ body {
   	font-family: 'Nunito', sans-serif;
 }
 
-.jumbotron {
-    background-image: linear-gradient(to right, #66ffff 0%, #ccf3ff 100%);  /* gradient color */
-}
-
-#paw {
-    height: 250px;
-    transition: all 1.5s;
-    opacity: .0;  /* initial transparency for JS animation effect */
-    border: 2px black solid; /* paw circular border */
-    border-radius: 50%;     /* paw circular border */
-    padding: 30px;
-}
-
-.jumbotron + h2 {
-	 text-align: center;
-}
-
-h2 {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-h3 {
-	 margin-left: -10px;
-	 padding-left: 10px;
-	 font-weight: bold; 
-	 position: relative;  /* prevents .background from covering h3 text */ 
-}
-
-.jumbotron p, .jumbotron h2, .jumbotron hr{
-    opacity: .0;  /* initial transparency for JS animation effect */
-    transition: all 1.5s; 
-}
-
 .dogphoto {
 	 width: 100%;   /* fits images within bootstrap grids */
 	 height: 100%; /* fits images within bootstrap grids */
@@ -90,9 +56,9 @@ h3 {
       1px 1px 0 #000;
 }
 
-footer {
+/*footer {
   margin-top: 5em;
-}
+}*/
 
 @media only screen and (max-width: 1024px) {
     .col-lg-4 {
@@ -100,29 +66,37 @@ footer {
     } 
     
     footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
+      margin-top: 21.3em;
+    }                                 
+}
+
+@media only screen and (max-width: 768px) {
+    .col-lg-4 {
+      filter: grayscale(0%);  /* removes grayscale on smaller devices */
+    } 
+    
+    footer {
+      margin-top: 5em;
     }                                 
 }
 
 @media only screen and (max-width: 415px) {
 
-  h2 {
-      margin-top: 2%;
-      text-align: center;
-  }
+    h2 {
+        margin-top: 2%;
+        text-align: center;
+    }
 
-  h3 {
-      text-align: center;
-  }
+    h3 {
+        text-align: center;
+    }
 
-  .jumbotron p, .jumbotron h2, .jumbotron hr {  /* centers content on photos.html banner */ 
-      text-align: center;
-  }
+    .jumbotron p, .jumbotron h2, .jumbotron hr {  /* centers content on photos.html banner */ 
+        text-align: center;
+    }
 
-  .jumbotron {
-      margin-top: -10px;  /* align jumbotron with navbar */
-      text-align: center;  /* centers paw on photos.html banner */ 
-  }
+    .jumbotron {
+        margin-top: -10px;  /* align jumbotron with navbar */
+        text-align: center;  /* centers paw on photos.html banner */ 
+    }
 }

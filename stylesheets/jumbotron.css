@@ -1,0 +1,46 @@
+.jumbotron {
+    background-image: linear-gradient(to right, #66ffff 0%, #ccf3ff 100%);
+}
+
+#paw {
+    height: 250px;
+    transition: all 1.5s;
+    opacity: .0;  /* initial transparency for JS animation effect */
+    border: 2px black solid; 
+    border-radius: 50%; 
+    padding: 30px;
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.jumbotron + h2 {
+	text-align: center;
+}
+
+h3 {
+	margin-left: -10px;
+	padding-left: 10px;
+	font-weight: bold; 
+	position: relative;  /* prevents .background from covering h3 text */ 
+}
+
+img {
+    height: 300px;
+}
+
+#max {
+	height: 240px;
+	width: 86%;
+}
+
+.jumbotron p, .jumbotron h2, .jumbotron hr {
+    opacity: .0;  /* initial transparency for JS animation effect */
+    transition: all 1.5s; 
+}
+
+hr {
+    opacity: 1 !important;  /* shows default transparent hr */
+}
