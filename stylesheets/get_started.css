@@ -1,6 +1,7 @@
 body {
 	padding-top: 150px;  /* prevents navbar from blocking body content */
 	font-family: 'Nunito', sans-serif;
+	/*background-image: url('https://media.istockphoto.com/photos/border-collie-85-years-old-sitting-and-looking-up-in-front-of-white-picture-id855872034?k=6&m=855872034&s=612x612&w=0&h=4xxVXC9-pcLRinoh8ks9G3XinrH8w5A2aZt1kfNk5Po=');*/
 }
 
 .container img {
@@ -19,7 +20,7 @@ p {
 	margin-right: 20%; 
 }
 
-.icon-upload { 
+.icon-upload {  /* upload box */
 	width: 90%; 
 	height: 80%; 
 	border: 2px dotted #BBBBBB;
@@ -27,7 +28,7 @@ p {
 	position: relative; 
 }
 
-#icon { 
+#icon {  /* upload box */
 	display: block;
 	width: 200px; 
 	height: 200px ; 
@@ -36,7 +37,7 @@ p {
 	padding-top: 20px; 
 }
 
-#upload {
+#upload {  /* upload box */
 	display: block; 
 	margin-left: auto; 
 	margin-right: auto;
@@ -56,14 +57,12 @@ form button {
 }
 
 footer {
-	margin-top: 10em;  //pushes footer down
+	margin-top: 14em;  /* pushes footer down */
 }
 
-@media only screen and (max-width: 1024px) {	
+@media only screen and (max-width: 1024px) {
 	footer {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
+		margin-top: 33.5em;  /*pushes footer down*/
 	}
 }
 
@@ -73,14 +72,27 @@ footer {
 	}
 
 	footer {
-		position: relative;
-		bottom: 0;
+		margin-top: 5em;
 	}
 
 	.icon-upload {
 		height: 105%;
 		margin: 0 auto;
 		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+
+	.icon-upload {
+		height: 105%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#upload {
+		padding: 0;
+		justify-content: center;
 	}
 }
 

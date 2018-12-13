@@ -1,124 +1,128 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>P&C About</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"><!-- \ -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>P&C About</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">  <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="stylesheets/about.css">
+    <link rel="stylesheet" href="stylesheets/navbar_footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">  <!-- Google Fonts -->
+    <link rel="icon" href="images/logo_TSZ_icon.ico">  <!-- favicon -->
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="home.html"><img id="logo" src="https://i.ibb.co/85YCnvq/logo.png" alt="logo" border="0"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mr-5 active">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="photo.html">Photos</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link get-started" href="get_started.html">Get Started</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- NAVBAR -->
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <img id="paw" src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/paw-512.png" alt="paw">
+          </div>
+          <div class="col-lg-7 col-md-5">
+            <h2>Our Mission</h2>
+            <hr>
+            <p>Inspired by Korean Dog Cafes, Pups & Cups aims to popularize similar cafes on the East Coast. We find happiness in providing a very friendly environment for humans and dogs alike. Whether while we eat, study, or relax, we can all use furry companions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JUMBOTRON -->
+
+    <!-- OUR FOUNDERS -->
+    <div class="container">
+      <hr>
+      <h2>Our Founders</h2>
+      <hr>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="background"></div>
+          <h3>Russel Tsang</h3>
+          <hr>
+          <p>Russel is a life-long animal lover who wanted to make dog companionship more accessible for everyone. He often visited his friend's house to accompany the pets that he never had. He loves making meaningful connections so please feel free to say hello!</p>
+        </div>
+        <div class="col-lg-4">
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/33898762_1948197488525377_6469069622292250624_n.jpg?_nc_cat=102&_nc_ht=scontent-lga3-1.xx&oh=811b616f92e577d474591476366c0740&oe=5C97C414" alt="Founder Russel">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="background"></div>
+          <h3>Kelly Wang</h3>
+          <hr>
+          <p>Kelly received her Bachelors Degree in Marketing Management at New York University. Her passion for dogs started through her childhood friend’s dog. She envisions a place where her love of dogs and foods can be combined. She enjoys solving puzzles and cooking on her free time.</p>
+        </div>
+        <div class="col-lg-4">
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/33869289_1918248164852378_2574058412564283392_n.jpg?_nc_cat=107&_nc_ht=scontent-lga3-1.xx&oh=b6d9c451b8134308fc2f24d6e33e3675&oe=5CA691E0" alt="Founder Kelly">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="background"></div>
+          <h3>Max</h3>
+          <hr>
+          <p>Woof woof. <br> Bark bark.</p>
+        </div>
+        <div class="col-lg-4">
+          <img src="https://images.unsplash.com/photo-1534628526458-a8de087b1123?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Founder Max" id="max">
+        </div>
+      </div>
+    </div>
+    <!-- OUR FOUNDERS -->
+
+    <br>
+    <br>
+
+    <!-- FOOTER -->
+    <footer>
+      <div id="socialmedia">
+        <img class="facebook" src ="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/facebook-512.png" alt="facebook">
+        <img class="instagram" src ="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/instagram-512.png" alt="instagram">
+      </div>
+    </footer>
+    <!-- FOOTER -->
+
+    <!-- SCRIPTS -->
+    <script src="scripts/navbar.js" type="text/javascript" defer="defer"></script>
+    <script src="scripts/body.js" type="text/javascript" defer="defer"></script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>            <!--  \ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>     <!-- > Bootstrap & jQuery CDNs --> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>         <!--  / -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
+    <script                                                                              
+      src="https://code.jquery.com/jquery-3.3.1.min.js"                                                                      
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
-      >
-    </script>
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="navbar&footer.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> <!-- Google Fonts -->
-</head>
-
-<body>
-
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="home.html"><img id="logo" img src="https://i.ibb.co/85YCnvq/logo.png" alt="logo" border="0"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="menu.html">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="photo.html">Photos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link get-started" href="get_started.html">Get Started</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- NAVBAR -->
-
-  <!-- JUMBOTRON -->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <img id="paw" src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/paw-512.png">
-        </div>
-        <div class="col-lg-7 col-md-5">
-          <h2>Our Mission</h2>
-          <hr>
-          <p>Inspired by Korean Dog Cafes, Pups & Cups aims to popularize similar cafes on the East Coast. We find happiness in providing a very friendly environment for humans and dogs alike. Whether while we eat, study, or relax, we can all use furry companions.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- JUMBOTRON -->
-
-  <!-- OUR FOUNDERS -->
-  <div class="container">
-    <hr>
-    <h2>Our Founders</h2>
-    <hr>
-    <div class="row">
-      <div class="col-lg-8">
-        <div class="background"></div>
-        <h3>Russel Tsang</h3>
-        <hr>
-        <p>Taking inspiration from Korean Dog Cafes, Pups & Cups aims to popularize similar cafes on the East Coast. We find happiness in providing a very friendly environment for both humans and dogs alike. Whether while we eat, study, or relax, we can all use furry companions.</p>
-      </div>
-      <div class="col-lg-4">
-        <img src="https://images.unsplash.com/photo-1509670572852-5823184def8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-lg-8">
-        <div class="background"></div>
-        <h3>Kelly Wang</h3>
-        <hr>
-        <p>Taking inspiration from Korean Dog Cafes, Pups & Cups aims to popularize similar cafes on the East Coast. We find happiness in providing a very friendly environment for both humans and dogs alike. Whether while we eat, study, or relax, we can all use furry companions.</p>
-      </div>
-      <div class="col-lg-4">
-        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-lg-8">
-        <div class="background"></div>
-        <h3>Max</h3>
-        <hr>
-        <p>Taking inspiration from Korean Dog Cafes, Pups & Cups aims to popularize similar cafes on the East Coast. We find happiness in providing a very friendly environment for both humans and dogs alike. Whether while we eat, study, or relax, we can all use furry companions.</p>
-      </div>
-      <div class="col-lg-4">
-        <img src="https://images.unsplash.com/photo-1534628526458-a8de087b1123?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-      </div>
-    </div>
-  </div>
-  <!-- OUR FOUNDERS -->
-
-  <!-- FOOTER -->
-  <footer>
-    <div id="socialmedia">
-      <img class="facebook" src ="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/facebook-512.png" >
-      <img class="instagram" src ="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/instagram-512.png" >
-    </div>
-  </footer>
-  <!-- FOOTER -->
-
-  <script src="navbar.js" type="text/javascript" defer="defer"></script>
-  <script src="about.js" type="text/javascript" defer="defer"></script>  
-</body>
+      ></script> 
+      <!-- SCRIPTS -->
+  </body>
 </html>

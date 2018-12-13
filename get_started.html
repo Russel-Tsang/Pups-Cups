@@ -1,11 +1,131 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-  <title>P&C Get Started</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"><!-- \ -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>P&C Get Started</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">  <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="stylesheets/get_started.css">
+    <link rel="stylesheet" href="stylesheets/navbar_footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">  <!-- Google Fonts -->
+    <link rel="icon" href="../images/logo_TSZ_icon.ico">  <!-- favicon -->
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="home.html"><img id="logo" src="https://i.ibb.co/85YCnvq/logo.png" alt="logo" border="0"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mr-5 active">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="photo.html">Photos</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link get-started" href="get_started.html">Get Started</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- NAVBAR -->
+
+    <div class="container">
+      <!-- INTRO -->
+      <hr>
+      <h2>BYOD</h2>
+      <hr>
+      <p>We welcome dogs of all shape and sizes. Fill the form to bring your dog. By completing this form, you and your dog can stop by anytime and get exclusive membership rights. </p>
+      <!-- INTRO -->
+
+      <br>
+
+      <!-- GET STARTED BODY -->
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="icon-upload">
+            <img id="icon" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-upload-512.png">
+            <div id="upload">
+              <input type="file" id="global-files-button" class="nodisplay" name="files[]" multiple accept=".jpg,.jpeg,.png,.gif,.apng,.tiff,.tif,.bmp,.xcf,.webp,.mp4,.mov">
+              <label class="browse-btn" for="global-files-button"></label>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <form method="post" action="thank_you.html">
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+                required
+                />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Human's Name"
+                required
+                />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Dog's Name"
+                required
+                />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Breed"
+                required
+                />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="5"
+                placeholder="Description..."
+                required
+                ></textarea>
+            </div>
+            <a bref="thank_you.html"><button class="btn btn-info">Submit</button></a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- GET STARTED BODY -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div id="socialmedia">
+        <img class="facebook" src="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/facebook-512.png" >
+        <img class="instagram" src="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/instagram-512.png" >
+      </div>
+    </footer>
+    <!-- FOOTER -->
+
+    <script src="scripts/navbar.js" type="text/javascript" defer="defer"></script>
+    <script src="scripts/get_started.js" type="text/javascript" defer="defer"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>            <!--  \ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>     <!-- > Bootstrap & jQuery CDNs --> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>         <!--  / -->
@@ -15,128 +135,5 @@
       crossorigin="anonymous"
       >
     </script>
-    <link rel="stylesheet" href="get_started.css">
-    <link rel="stylesheet" href="navbar&footer.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> <!-- Google Fonts -->
-	
-	<link rel="icon" href="../../../Downloads/logo_TSZ_icon.ico" type="image/x-icon"/>
-<link rel="shortcut icon" href="../../../Downloads/logo_TSZ_icon.ico" type="image/x-icon"/>
-</head>
-	
-
-<body> 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-xl navbar-dark bg-light fixed-top">
-    <a class="navbar-brand" href="home.html"><img id="logo" img src="https://i.ibb.co/85YCnvq/logo.png" alt="logo" border="0"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="menu.html">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="photo.html">Photos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link get-started" href="get_started.html">Get Started</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- NAVBAR -->
-
-
-    <div class="container">
-    <hr>
-  	<h2>BYOD</h2>
-  	<hr>
-		<p>We welcome dogs of all shape and sizes. Fill the form to bring your dog. By completing this form, you and your dog can stop by anytime and get exclusive membership rights. </p>
-  	<br>
-    <div class="row">
-      <div class="col-lg-6">
-		  <div class="icon-upload"> 
-		 <img id="icon" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-upload-512.png">
-		  <div id="upload" style="border: 2px red solid;">
-		   <input type="file" id="global-files-button" class="nodisplay" name="files[]" multiple accept=".jpg,.jpeg,.png,.gif,.apng,.tiff,.tif,.bmp,.xcf,.webp,.mp4,.mov">
-			  <label class="browse-btn" for="global-files-button"></label>
-		  </div>
-			  </div>
-		  </div>
-		
-      <div class="col-lg-6">
-    	<form>
-		<form class="needs-validation" novalidate>
-    	  <div class="form-group">
-    	    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" pattern="[A-Za-z]{1,32" required> 
-			  <div class="invalid-feedback"> Please provide a valid email </div>
-			  
-    	  </div>
-    	  <div class="form-group">
-
-    	    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" required>
-			  <div class="invalid-feedback"> Please provide a name </div>
-    	  </div>
-    	  <div class="form-group">
-
-    	    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Dog's name" required>
-			  <div class="invalid-feedback"> Please provide a name </div>
-    	  </div>
-			 <div class="form-group">
-
-    	    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Dog's breed" required>
-			  <div class="invalid-feedback"> Please provide a breed </div>
-    	  </div>
-			
-    	  <div class="form-group">
- 
-    	    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Description..." required></textarea>
-    	  </div>
-        <button type="button" class="btn btn-info">Submit</button>
-			</form>
-    	</form>
-		  
-			<script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
-</script>
-			
-    
-    </div>
-    </div>
-  </div>
-
-  <footer> 
-    <div id="socialmedia">
-      <img class="facebook" src="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/facebook-512.png" >
-      <img class="instagram" src="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/instagram-512.png" >
-    </div>
-  </footer>
-
-  <script src="navbar.js" type="text/javascript" defer="defer"></script>
-
-</body>
+  </body>
 </html>

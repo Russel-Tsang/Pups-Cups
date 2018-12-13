@@ -1,183 +1,125 @@
 <!doctype html>
 <html>
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Photos</title>
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"><!-- \ -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>            <!--  \ -->
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>     <!-- > Bootstrap & jQuery CDNs --> 
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>         <!--  / -->
-	    <script                                                                              
-	      src="https://code.jquery.com/jquery-3.3.1.min.js"                                                                      
-	      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	      crossorigin="anonymous"
-	      >
-	    </script>
-      <link rel="stylesheet" href="photo.css">
-      <link rel="stylesheet" href="navbar&footer.css">
-      <!-- <link href="lightbox.css" rel="stylesheet" type="text/css"> -->
-      <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-      
-   </head>
-   <body>
-	  <!-- NAVBAR -->
-	  <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
-	    <a class="navbar-brand" href="home.html"><img id="logo" img src="https://i.ibb.co/85YCnvq/logo.png" alt="logo" border="0"></a>
-	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" id="navbarNav">
-	      <ul class="navbar-nav ml-auto">
-	        <li class="nav-item active">
-	          <a class="nav-link" href="about.html">About</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="menu.html">Menu</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="photo.html">Photos</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="contact.html">Contact</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link get-started" href="get_started.html">Get Started</a>
-	        </li>
-	      </ul>
-	    </div>
-	  </nav>
-	  <!-- NAVBAR -->
-	  <!-- JUMBOTRON -->
-	  <div class="jumbotron jumbotron-fluid">
-	    <div class="container">
-	      <div class="row">
-	        <div class="col-lg-4">
-	          <img id="paw" src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/paw-512.png">
-	        </div>
-	        <div class="col-lg-8">
-	          <h2>Our Photos</h2>
-	          <hr>
-	          <p>In addition to serving great sandwiches and salads, Pups &amp Cups is also where pets find their people. We host doggy events and fundraisers. Below is a brief overview of all the dogs we worked with before.</p>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	  <!-- JUMBOTRON -->
-	  <br> 
-      <div class="container">
-         <div class="row">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">  <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="stylesheets/photo.css">
+    <link rel="stylesheet" href="stylesheets/navbar_footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="icon" href="images/logo_TSZ_icon.ico">  <!-- favicon -->
+  </head>
+  <body>
 
-               <div class="col-lg-4">
-                  <a href="https://images.unsplash.com/photo-1508109657675-38fe91fb2ada?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" 
-                     data-lightbox="gallery" 
-                     data-title="Lady, the Border Collie">
-                  <img class="dogphoto" src="https://images.unsplash.com/photo-1508109657675-38fe91fb2ada?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"></a>
-                  <div class="overlay">
-                     <div class="text">Lady</div>
-                  </div>
-               </div>
-
-
-               <div class="col-lg-4">
-                  <a href="https://images.unsplash.com/photo-1543802127-7f045d3b5cfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80" 
-                     data-lightbox="gallery" 
-                     data-title="Clover, the Corgi">
-                  <img class="dogphoto" src="https://images.unsplash.com/photo-1543802127-7f045d3b5cfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80"></a>
-                  <div class="overlay">
-                     <div class="text">Clover</div>
-                  </div>
-               </div>
-
-
-               <div class="col-lg-4">
-                  <a href="https://images.unsplash.com/photo-1532022160153-7735cd049992?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=890&q=80" 
-                     data-lightbox="gallery" 
-                     data-title="Spot, the Dalmatian">
-                  <img class="dogphoto" src="https://images.unsplash.com/photo-1532022160153-7735cd049992?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=890&q=80"></a>
-                  <div class="overlay">
-                     <div class="text">Spot</div>
-                  </div>
-               </div>
-
-
-               <div class="col-lg-4">
-                  <a href="https://images.unsplash.com/photo-1463960145376-fd6d2b245ee6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" 
-                     data-lightbox="gallery" 
-                     data-title="Otis, the Pug">
-                  <img class="dogphoto" src="https://images.unsplash.com/photo-1463960145376-fd6d2b245ee6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></a>
-                  <div class="overlay">
-                     <div class="text">Otis</div>
-                  </div>
-               </div>
-
-
-               <div class="col-lg-4">
-                  <a href="https://images.unsplash.com/photo-1509463545580-61e747a6a12f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" 
-                     data-lightbox="gallery" 
-                     data-title="Vinnie, French Bulldog">
-                  <img class="dogphoto" src="https://images.unsplash.com/photo-1509463545580-61e747a6a12f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"></a>
-                  <div class="overlay">
-                     <div class="text">Vinnie</div>
-                  </div>
-               </div>
-
-
-               <div class="col-lg-4">
-                  <a href="https://images.unsplash.com/photo-1540675441312-48a16ddc3607?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" 
-                     data-lightbox="gallery" 
-                     data-title="Daisy, the Golden Retriever">
-                  <img class="dogphoto" src="https://images.unsplash.com/photo-1540675441312-48a16ddc3607?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"></a>
-                  <div class="overlay">
-                     <div class="text">Daisy</div>
-                  </div>
-               </div>
-
-
-               <div class="col-lg-4">
-                  <a href="https://images.unsplash.com/photo-1529429617124-95b109e86bb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" 
-                     data-lightbox="gallery" 
-                     data-title="Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum ">
-                  <img class="dogphoto" src="https://images.unsplash.com/photo-1529429617124-95b109e86bb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"></a>
-                  <div class="overlay">
-                     <div class="text">Dog 7</div>
-                  </div>
-               </div>
-
-
-               <div class="col-lg-4">
-                  <a href="https://images.unsplash.com/photo-1529429617124-95b109e86bb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" 
-                     data-lightbox="gallery" 
-                     data-title="Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum ">
-                  <img class="dogphoto" src="https://images.unsplash.com/photo-1529429617124-95b109e86bb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"></a>
-                  <div class="overlay">
-                     <div class="text">Dog 8</div>
-                  </div>
-               </div>
-
-
-               <div class="col-lg-4">
-                  <a href="https://images.unsplash.com/photo-1529429617124-95b109e86bb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" 
-                     data-lightbox="gallery" 
-                     data-title="Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum ">
-                  <img class="dogphoto" src="https://images.unsplash.com/photo-1529429617124-95b109e86bb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"></a>
-                  <div class="overlay">
-                     <div class="text">Dog 9</div>
-                  </div>
-               </div>
-
-         </div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="home.html"><img id="logo" src="https://i.ibb.co/85YCnvq/logo.png" alt="logo" border="0"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mr-5 active">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="photo.html">Photos</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link get-started" href="get_started.html">Get Started</a>
+          </li>
+        </ul>
       </div>
+    </nav>
+    <!-- NAVBAR -->
 
-     <footer> 
-       <div id="socialmedia">
-         <img class="facebook" src="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/facebook-512.png" >
-         <img class="instagram" src="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/instagram-512.png" >
-       </div>
-     </footer>
+    <!-- JUMBOTRON -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <img id="paw" src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/paw-512.png">
+          </div>
+          <div class="col-lg-8">
+            <h2>Our Photos</h2>
+            <hr>
+            <p>In addition to serving great sandwiches and salads, Pups &amp Cups is also where pets find their people. We host doggy events and fundraisers. Below is a brief overview of all the dogs we worked with before.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JUMBOTRON -->
 
-<!--       <script type="text/javascript" src="lightbox.js"></script>
-      <script type="text/javascript" src="lightbox-plus-jquery.js"></script> -->
-      <script src="about.js" type="text/javascript" defer="defer"></script> 
-   </body>
+    <br> 
+
+    <!-- DOG PHOTOS -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="dogphoto" src="https://images.unsplash.com/photo-1508109657675-38fe91fb2ada?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Lady">
+          <div class="overlay">
+            <div class="text">Lady</div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <img class="dogphoto" src="https://images.unsplash.com/photo-1543802127-7f045d3b5cfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80" alt="Clover">
+          <div class="overlay">
+            <div class="text">Max</div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <img class="dogphoto" src="https://images.unsplash.com/photo-1532022160153-7735cd049992?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=890&q=80" alt="Spot">
+          <div class="overlay">
+            <div class="text">Spot</div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <img class="dogphoto" src="https://images.unsplash.com/photo-1463960145376-fd6d2b245ee6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="Otis">
+          <div class="overlay">
+            <div class="text">Otis</div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <img class="dogphoto" src="https://images.unsplash.com/photo-1509463545580-61e747a6a12f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Vinnie">
+          <div class="overlay">
+            <div class="text">Vinnie</div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <img class="dogphoto" src="https://images.unsplash.com/photo-1540675441312-48a16ddc3607?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Daisy">
+          <div class="overlay">
+            <div class="text">Chris</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- DOG PHOTOS -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div id="socialmedia">
+        <img class="facebook" src="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/facebook-512.png" >
+        <img class="instagram" src="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/instagram-512.png" >
+      </div>
+    </footer>
+    <script src="scripts/body.js" type="text/javascript" defer="defer"></script> 
+    <script src="scripts/navbar.js" type="text/javascript" defer="defer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>            <!--  \ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>     <!-- > Bootstrap & jQuery CDNs --> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>         <!--  / -->
+    <script                                                                              
+      src="https://code.jquery.com/jquery-3.3.1.min.js"                                                                      
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+      ></script>
+      <!-- FOOTER -->
+      
+  </body>
 </html>

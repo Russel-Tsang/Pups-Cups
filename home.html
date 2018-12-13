@@ -4,47 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pups & Cups</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"><!-- \ -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>            <!--  \ -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>     <!-- > Bootstrap & jQuery CDNs --> 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>         <!--  / -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-      >
-    </script>
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="navbar&footer.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> <!-- Google Fonts -->
-    
-    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- \ fotorama CDNs -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>          <!-- /               -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">  <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="stylesheets/home.css">
+    <link rel="stylesheet" href="stylesheets/navbar_footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> <!-- google fonts -->
+    <link rel="icon" href="../images/logo_TSZ_icon.ico">  <!-- favicon -->
 </head>
 
 <body>
 
   <div class="nav">
     <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="home.html"><img id="logo" img src="https://i.ibb.co/85YCnvq/logo.png" alt="logo" border="0"></a>
+      <a class="navbar-brand" href="home.html"><img id="logo" src="https://i.ibb.co/85YCnvq/logo.png" alt="logo" border="0"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item mr-5 active">
             <a class="nav-link" href="about.html">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mr-5">
             <a class="nav-link" href="menu.html">Menu</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mr-5">
             <a class="nav-link" href="photo.html">Photos</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mr-5">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mr-5">
             <a class="nav-link get-started" href="get_started.html">Get Started</a>
           </li>
         </ul>
@@ -80,7 +69,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card img-thumbnail">
-            <img src="https://images.unsplash.com/photo-1532635224-cf024e66d122?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+            <img src="https://images.unsplash.com/photo-1532635224-cf024e66d122?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Tasteful">
             <div class="container">
               <br>
               <h3 class="h3-card"><b>Tasteful</b></h3>
@@ -92,7 +81,7 @@
         </div>
         <div class="col-md-4">
           <div class="card img-thumbnail">
-            <img src="https://images.unsplash.com/photo-1446034730750-a0b64d06ad13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+            <img src="https://images.unsplash.com/photo-1446034730750-a0b64d06ad13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Healthful">
             <div class="container">
               <br>
               <h3 class="h3-card"><b>Healthful</b></h3>
@@ -104,7 +93,7 @@
         </div>
         <div class="col-md-4">
           <div class="card img-thumbnail">
-            <img src="https://images.unsplash.com/photo-1494947665470-20322015e3a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+            <img src="https://images.unsplash.com/photo-1494947665470-20322015e3a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Dogful">
             <div class="container">
               <br>
               <h3 class="h3-card"><b>Dogful</b></h3>
@@ -150,30 +139,33 @@
 
     </div>
   </div>
+
+  <br>
+  <br>
   <!-- FOOTER -->
   <footer>
     <div id="socialmedia">
-      <img class="facebook" src ="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/facebook-512.png" >
-      <img class="instagram" src ="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/instagram-512.png" >
+      <img class="facebook" src="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/facebook-512.png" alt="facebook">
+      <img class="instagram" src="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/instagram-512.png" alt="instagram">
     </div>
   </footer>
   <!-- FOOTER -->
   
-  <script src="navbar.js" type="text/javascript" defer="defer"></script>
-  <script src="home.js" type="text/javascript" defer="defer"></script>    
+  <!-- SCRIPTS -->
+  <script src="scripts/navbar.js" type="text/javascript" defer="defer"></script>
+  <script src="scripts/home.js" type="text/javascript" defer="defer"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>            <!--  \ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>     <!-- > Bootstrap & jQuery CDNs --> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>         <!--  / -->
+  <script                                                                              
+    src="https://code.jquery.com/jquery-3.3.1.min.js"                                                                      
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+    >
+  </script>  
+  <!-- SCRIPTS -->
+  
 </body>
 </html>
 
 
-<!--     <div id="foodPhotos">
-      <img class="foodImg img-thumbnail" src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
-      <img class="foodImg img-thumbnail" src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
-      <img class="foodImg img-thumbnail" src="https://images.unsplash.com/photo-1453831362806-3d5577f014a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1038&q=80">
-      <img class="foodImg img-thumbnail" src="https://images.unsplash.com/photo-1503764654157-72d979d9af2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80">
-      <img class="foodImg img-thumbnail" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"> 
-      <img class="foodImg img-thumbnail" src="https://images.unsplash.com/photo-1497888329096-51c27beff665?ixlib=rb-0.3.5&s=35e5289099a1f50b32966aaea3ef41b5&auto=format&fit=crop&w=1051&q=80">
-      <img class="foodImg img-thumbnail" src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
-      <img class="foodImg img-thumbnail" src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
-      <img class="foodImg img-thumbnail" src="https://images.unsplash.com/photo-1453831362806-3d5577f014a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1038&q=80">
-    </div>
- -->

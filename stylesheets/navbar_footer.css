@@ -1,3 +1,9 @@
+/*NAVBAR*//*NAVBAR*//*NAVBAR*//*NAVBAR*//*NAVBAR*/
+
+.red {
+	background-color: red !important;
+}
+
 .navbar-brand {
 	position: relative;
 	margin-top: -43px;
@@ -21,8 +27,19 @@
 .nav-link {
 	cursor: pointer;
 	font-size: 20px; 
-	margin-right: 50px;
 	transition: all .3s;
+}
+
+.get-started {
+	border: 2px #9ac8ed solid;  /* border around 'get started' navbar item */
+	padding: 5px 30px 5px 27px !important;
+	border-radius: 10%;
+}
+
+@media only screen and (max-width: 1159px) {
+	.get-started {
+		border: none; /* removes border for hamburger menu */	
+	}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -43,13 +60,15 @@
 	    margin: 10px 0 10px -100px !important;
 	    padding-top: 25px !important;
 	}
+
+	.navbar-nav .nav-link {
+	    margin-left: 20%;
+	}
 }
 
-.get-started {
-	border: 2px #9ac8ed solid;
-	padding: 5px 30px 5px 27px !important;
-	border-radius: 10%;
-}
+/*NAVBAR*//*NAVBAR*//*NAVBAR*//*NAVBAR*//*NAVBAR*/
+
+/*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
 
 footer {
 	clear: both;
@@ -69,3 +88,12 @@ footer {
 	height: 50px; 
 	width: 50px;
 }
+
+@media only screen and (max-width: 1024px) {
+    .col-lg-4 {
+      filter: grayscale(0%);  /* removes grayscale on smaller devices */
+    }                           
+}
+
+/*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
+
