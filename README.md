@@ -9,4 +9,4 @@ A conceptual front-end website design for a NYC-based Dog Cafe
 
 ## Get Started
 
-The application can simply be launched here: https://github.com/Russel-Tsang/Pups-and-Cups
+The application can simply be launched here: https://russel-tsang.github.io/Pups-and-Cups/
